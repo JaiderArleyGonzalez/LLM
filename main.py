@@ -5,7 +5,7 @@ from langchain.prompts import PromptTemplate
 
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 
 

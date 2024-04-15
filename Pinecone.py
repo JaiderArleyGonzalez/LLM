@@ -5,7 +5,7 @@ from langchain_pinecone import PineconeVectorStore
 from pinecone import Pinecone, PodSpec
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 os.environ["PINECONE_API_KEY"] = "7e0a766f-a9d3-4d9f-b1f0-5f1538d57094"
 os.environ["PINECONE_ENV"] = "gcp-starter"
 
@@ -59,7 +59,7 @@ def search():
     # if you already have an index, you can load it like this
     docsearch = PineconeVectorStore.from_existing_index(index_name, embeddings)
 
-    query = "¿De qué trata En la diestra de Dios?"
+    query = "What is the leading cause of avoidable premature deaths according to the European Commission, as mentioned in the text?"
     docs = docsearch.similarity_search(query)
 
     print(docs[0].page_content)
